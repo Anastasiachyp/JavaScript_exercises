@@ -196,3 +196,98 @@ risultato = nome.substring(0, 3)
 —> Luk
 
 console.log(risultato);
+
+// ARRAYS - struttura di dati
+
+// anastasia chypyha - 12 amici 
+
+const amico1anastasia = 'Cam';
+const amico2anastasia = 'Mitchell';
+
+
+// Lista di amici di Roberto
+
+const Amici_Roberto = ['Phil', 'Claire', 'Gloria', 'Jay'];
+
+console.log(Amici_Roberto.length);
+// risultato sarà 4 
+
+// se volessimo togliere un elemento dalla nostra array
+Amici_Roberto[3] = 'Mitchell'
+console.log(Amici_Roberto)
+
+
+// ARRAYS - Metodi
+
+const colori = ['rosso', 'blu', 'verde']
+
+// push -- aggiunge un elemento alla fine della Array.
+
+colori.push(‘rosa');
+console.log(colori);
+
+
+// pop -- toglie l'ultimo elemento della Array.
+
+colori.pop();
+console.log(colori);
+
+// unshift -- aggiunge un elemento all'inizio della Array.
+
+colori.unshift(‘rosa');
+console.log(colori);
+
+
+// shift -- rimuove il primo elemento della Array.
+
+colori.shift(); 
+console.log(colori);
+
+
+// indexOf -- mostra la posizione dell'elemento della Array, devo aggiungere la formula 'console.log'
+
+console.log(colori.indexOf('blu'));
+
+// slice -- creo una nuova costante per estrarre una parte della Array
+
+const nuovo = colori.slice(0, 2)
+
+console.log(nuovo);
+
+// concat -- per concatenare due Arrays
+
+const arr1 = ['facebook', 'instagram'];
+const arr2 = ['whatsapp'];
+
+console.log(arr1.concat(arr2));
+
+
+console.log(colori); // fa riferimento per i metodi che non hanno ‘console.log’
+
+
+
+
+
+
+// Esercizio 1
+
+const colori = ['rosso', 'blu', 'verde', 'viola'];
+
+console.log(colori[colori.lenght - 2]);
+// lenght è 4, perchè sono 4 i colori, si fa 4-2 ed esce fuori verde poiché 2 è la posizione del colore verde (0,1,2..etc)
+
+
+
+
+
+// Esercizio 2
+
+const social = [
+    ['facebook', 'IG'], // 0
+    ['whatsapp', 'telegram'], // 1
+    ['tiktok', 'snapchat'], // 2 
+]
+
+console.log(social[1][1]); // soluzione 'telegram' -- prima quadra fa riferimento alla prima array, la seconda quadra fa riferimento alla posizione dell'elemento nella prima Array.
+
+console.log(social[2][0]) // soluzione 'tiktok' -- prima quadra fa riferimento alla terza array, la seconda quadra fa riferimento alla posizione dell'elemento nella terza Array.
