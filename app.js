@@ -116,3 +116,59 @@ const efemmina = true
 
 console.log(nome + ' ' + cognome + ' ' + eta + efemmina);
 // unione di varie stringhe, boolean, numeri
+
+/ NUMERI
+
+const num1 = 24;
+const num2 = 6;
+
+let risultato;
+
+risultato = num1 + num2
+risultato = num1 - num2
+risultato = num1 * num2
+risultato = num1 / num2
+
+// Modulo
+risultato = num1 % num2;
+// '%' si chiama modulo e da come risultato il resto della divisione.
+// in questo esempio da 0, perchè 24/6 fa 4 e non c'è resto.
+
+// OGGETTO MATH
+
+// Math.PI()
+risultato = Math.PI
+// è il pi-greco
+// Math.round()
+risultato = Math.round(42.53)
+// arrotonda per eccesso e per difetto
+// Math.ceil()
+risultato = Math.ceil(42.2)
+// approssima sempre al numero più alto
+// Math.floor()
+risultato = Math.floor(5.9)
+// approssima sempre al numero più basso
+// Math.sqrt()
+risultato = Math.sqrt(25)
+// la radice quadrata del numero
+// Math.abs()
+risultato = Math.abs(-24)
+// rende il numero sempre positivo
+// Math.pow()
+risultato = Math.pow(3, 2)
+// il secondo numero è la potenza del primo
+// Math.min()
+risultato = Math.min(2, 4, 567, 876, -45)
+// ci restituisce il numero più bassso di una lista tra parentesi tonde.
+// Math.max()
+risultato = Math.max(2, 4, 567, 876, -45)
+// ci restituisce il numero più alto di una lista tra parentesi tonde.
+// Math.random()
+risultato = Math.random()
+// da un numero random tra lo 0 e l'1, decimale.
+
+// se si vuole un numero random tra lo 0 e 100, ma intero
+risultato = Math.floor(Math.random() * 100)
+
+
+console.log(risultato);
