@@ -63,3 +63,46 @@ console.log(persona)
 persona.name = 'Claire'
 
 console.log(persona)
+
+// Oggetti
+const persona = {
+    name: 'Anastasia',
+    eta: 25,
+}
+
+console.log(persona)
+
+persona = 'prova123'
+
+console.log(persona)
+
+// TYPE CONVERSION
+
+// 1. numero a stringa
+
+let valore;
+
+valore = String(5);
+// scrivendo 'String' davanti, diventa da numero a stringa
+
+// 1.2 numero a stringa (2° metodo)
+valore = (5).toString();
+// toString() è un altro metodo per fare diventare un numero in stringa
+
+// 2. boolean a stringa
+valore = String(true)
+
+// 3. Stringa a numero
+valore = Number('5')
+
+// 4. boolean a numero
+valore = Number(true)
+valore = Number(false)
+// quando facciamo diventare un boolean 'true' in numero diventa 1, con il 'false' diventa 0.
+
+// 5. Stringa a numero
+valore = '100.3'
+valore = parseInt('100.3');
+// quando usiamo la funzione 'parseInt' il numero all'interno delle parentesi verrà riportato intero e non decimale. è da stringa diventerà numero.
+valore = parseFloat('103.5')
+// quando usiamo la funzione 'parseFloat' il numero rimane decimale.
