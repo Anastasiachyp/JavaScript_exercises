@@ -43,3 +43,23 @@ console.log(anonimo);
 const simbolo = Symbol();
 console.log(simbolo);
 // non interessa in questo momento.
+
+// Arrays
+
+var nomi = ['Roberto', 'Phil', 'Anastasia'];
+console.log(typeof nomi)
+// 'typeof' delle Arrays sono sempre object.
+
+// Oggetti
+
+const persona = {
+    name: 'Anastasia',
+    eta: 25,
+}
+
+
+console.log(persona)
+
+persona.name = 'Claire'
+
+console.log(persona)
