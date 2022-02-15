@@ -291,3 +291,89 @@ const social = [
 console.log(social[1][1]); // soluzione 'telegram' -- prima quadra fa riferimento alla prima array, la seconda quadra fa riferimento alla posizione dell'elemento nella prima Array.
 
 console.log(social[2][0]) // soluzione 'tiktok' -- prima quadra fa riferimento alla terza array, la seconda quadra fa riferimento alla posizione dell'elemento nella terza Array.
+
+// OGGETTI - Struttura di dati
+
+const arr = ['valore1', 'valore2'];
+
+const persona = {
+    // chiave: 'nome' valore: 'cam'
+    nome: 'cam',
+    eta: 46,
+    indirizzo: {citta: 'missouri', via:'california street'},
+    emaggiorenne: true,
+    colorepreferito : ['rosa']
+}
+
+// prendere i valori
+
+// così vediamo il valore 'eta'
+console.log(persona.eta)
+
+// cosi vediamo la citta
+console.log(persona.indirizzo.citta)
+
+// un'altra metodologia per accedere ai valori 
+console.log(persona["colorepreferito"][0]) // possiamo anche aggiungere la posizione per vedere un valore della array
+
+
+
+// CREARE OGGETTI
+
+// 1.
+
+const persona = {};
+persona.nome = "anastasia";
+persona.eta = 25;
+
+console.log(persona)
+
+// 2.
+
+const persona2 = { nome: 'gloria' };
+
+console.log(persona2)
+
+// 3. 
+
+const persona3 = new Object;
+persona3.cognome = "Delgado";
+persona3.cognome = "Pricett"
+
+console.log(persona3)
+
+
+// OGGETTI vs ARRAY
+
+// OGGETTI
+const persona = {
+    nome: 'alex'
+}
+
+persona.nome
+persona["nome"]
+
+persona.cognome = "dunphy"
+persona.cognome = "scott" // cambiamo cognome
+
+delete persona.nome; // così cancello il nome dall'oggetto
+
+console.log(persona)
+
+
+
+
+
+// ARRAY
+const persone = ['claire'];
+persone[0]
+persone[0] = 'gloria'
+
+persone.push('pritchett')
+persone.pop(); // così cancello l'ultimo elemento
+
+console.log(persone)
+
+
+
+
