@@ -172,3 +172,27 @@ risultato = Math.floor(Math.random() * 100)
 
 
 console.log(risultato);
+
+// STRINGHE
+
+const nome = 'Luke';
+let risultato;
+
+// lenght - conta quanti caratteri ci sono dentro la stringa
+risultato = nome.length
+// toUpperCase() - trasforma la stringa in maiuscolo
+risultato = nome.toUpperCase();
+// toLowerCase()- trasforma la stringa in minuscolo
+risultato = nome.toLowerCase();
+// [] - permette di vedere che lettera c'è nella posizione tra le parentesi quadre.
+risultato = nome[2];
+// indexOf() - permette di vedere la posizione della lettera nella stringa
+risultato = nome.indexOf('e')
+// charAt() - fa la stessa cosa delle parentesi quadre
+risultato = nome.charAt(3)
+// substring() - in base ai numeri posti tra parentesi ci indica le lettere o gli elementi che sono presenti che sono posizionati in quella fascia di numeri.
+// L'ultimo numero non viene considerato come posizione compresa.
+risultato = nome.substring(0, 3) 
+—> Luk
+
+console.log(risultato);
