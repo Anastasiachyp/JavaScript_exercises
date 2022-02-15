@@ -106,3 +106,13 @@ valore = parseInt('100.3');
 // quando usiamo la funzione 'parseInt' il numero all'interno delle parentesi verrà riportato intero e non decimale. è da stringa diventerà numero.
 valore = parseFloat('103.5')
 // quando usiamo la funzione 'parseFloat' il numero rimane decimale.
+
+// TYPE COERCION
+
+const nome = 'anastasia';
+const cognome = 'chypyha';
+const eta = 25
+const efemmina = true
+
+console.log(nome + ' ' + cognome + ' ' + eta + efemmina);
+// unione di varie stringhe, boolean, numeri
