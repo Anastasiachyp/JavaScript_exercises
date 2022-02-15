@@ -1,9 +1,15 @@
-// DATE
-// 1.
-let oggi = new Date(); // comando per conoscere la data di oggi;
-console.log(oggi)
+// Variabili
 
-// 2.
-let compleanno = new Date('07-07-1996')
-console.log(compleanno) 
- 
+// var, let, const
+
+
+var nome = 'Anastasia';
+
+console.log(nome);
+
+
+var cognome;
+
+console.log(cognome);
+
+//Var = key word
