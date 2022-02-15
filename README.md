@@ -1,4 +1,4 @@
-# JavaScript_exercises
+# JavaScript
 ## *Learning Objectives*
 
 ### - Introduce the JavaScript Language. 
