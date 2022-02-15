@@ -374,6 +374,154 @@ persone.pop(); // così cancello l'ultimo elemento
 
 console.log(persone)
 
+// DATE
+// 1.
+let oggi = new Date(); // comando per conoscere la data di oggi;
+console.log(oggi)
+
+// 2.
+let compleanno = new Date('07-07-1996')
+console.log(compleanno) 
+ 
+
+// IF ELSE
+
+1) esempio
+const maggioreEta = 18;
+const etaCam = 45;
+
+if (etaCam > maggioreEta) {
+    console.log('Cam puo bere la birra')
+} else {
+    console.log('Cam puo bere il latte')
+}
+
+2) esempio
+
+const etaCam = 45;
+
+if (etaCam < 11) {
+    console.log('Cam è un bambino')
+} else if (etaCam > 20 && etaCam < 50) {
+    console.log('Cam è un adulto')
+} else {
+    console.log('Cam è un anziano')
+}
+
+3) esempio
+
+// == valore è uguale 
+// === valore e tipo (esempio: stringa, boolean, numero) devono essere uguali —> usare sempre questo, perché da più certezza di uguaglianza
+
+const id = 70;
+
+if (id === 70) { 
+    console.log('id è 70')
+} else {
+    console.log('id non è 70')
+}
+
+
+
+// OPERATORI LOGICI 
+
+// 1. AND &&
+const etaCam = 45;
+
+if (etaCam < 11) {
+    console.log('Cam è un bambino')
+} else if (etaCam > 20 && etaCam < 50) { // Prende in causa due condizioni, devono essere entrambe vere per essere eseguite
+    console.log('Cam è un adulto')
+} else {
+    console.log('Cam è un anziano')
+}
+
+// 2. OR || - Solo una condizione deve essere vero
+
+const eta = 34 
+if (eta < 3 || eta > 99) {
+    console.log('non pupi giocare')
+} else {
+    console.log('puoi giocare')
+}
+
+// 3. NOT !
+
+const id = 100;
+
+if (id !== 100) { // rendiamo contraria la funzione con il "!"
+    console.log('id è uguale a 100')
+} else {
+    console.log('id non è 100')
+}
+
+// 4. Ternary operator
+
+const id = 100; // i due punti in questo caso stanno come la funzione "OR"
+
+id === 100 ? console.log('id è 100') : console.log('id non è 100')
+
+// SWITCH -- è simile alla funzione IF ELSE, in quan
+
+const nome = 'mitchell';
+
+switch(nome) {
+    case 'jonny':
+        console.log('nome è jonny')
+        break;
+    case 'cam':
+        console.log('nome è cam')
+    case 'mitchell':
+        console.log('nome è mitchell')
+    default:
+        console.log('nome non è jonnhy/cam/mitchell')
+        break;
+}
+
+// come funziona 'switch'
+switch(valore) {
+    case valore1:
+        // fa qualcosa
+        break;
+    case valore2:
+        // fa qualcosa
+        break;
+        default:
+        // nessun valore
+        break;
+}
+
+// FUNZIONI
+
+// function declaration
+
+function salutare(nome, cognome) { 
+  // all'interno delle parentesi tonde metto dei parametri, che definisco accanto all'azione in fondo.
+    // se non vengono definiti i valori dei parametri in fondo, posso metterli nelle parentesi tonde, ma avranno più importanza quelli in fondo.
+  console.log('ciao' + ' ' + nome + ' ' + cognome)
+}
+
+salutare('anastasia', 'rossi');
+
+// funzione 'return'
+
+function salutare() { 
+    return 3 * 5
+}
+  
+console.log(salutare());
+
+// --> il risultato sarà 15
+
+// function expression
+
+const doppio = function(x) {
+return x * 2
+}
+
+console.log(doppio(10));
+// --> risultato sarà 20
+
 
 
 
